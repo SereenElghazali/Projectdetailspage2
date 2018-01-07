@@ -4,15 +4,48 @@
 
 $(document).ready(function () {
 	
-	$( ".contact a" ).on( "click", function(e) {
+	$( ".phone a" ).on( "click", function(e) {
     e.preventDefault();
     var link = $(this).attr('href');
 
     swal({
-        title: "Are you sure?",
-        text: "",
+        title: "+971 50 1553316",
+        text: "Call me",
         type: "",
-        showCancelButton: true
+        showCancelButton: true,
+		
+    },
+    function(){
+        window.location.href = link;
+		console.log('link',link);
+    });
+});
+	$( ".whatsapp a" ).on( "click", function(e) {
+    e.preventDefault();
+    var link = $(this).attr('href');
+
+    swal({
+        title: "+971 50 1553316",
+        text: "Whatsapp me",
+        type: "",
+        showCancelButton: true,
+		
+    },
+    function(){
+        window.location.href = link;
+		console.log('link',link);
+    });
+});
+	$( ".sms a" ).on( "click", function(e) {
+    e.preventDefault();
+    var link = $(this).attr('href');
+
+    swal({
+        title: "+971 50 1553316",
+        text: "sms me",
+        type: "",
+        showCancelButton: true,
+		
     },
     function(){
         window.location.href = link;
