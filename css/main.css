@@ -1,0 +1,13 @@
+.gallery{
+    border:1px solid #000;
+    height: 50px;
+     
+}
+#g1{
+	background-color: aqua;
+	position: fixed;
+	top: 5px;
+	left: 0px;
+	right: 0px;
+	
+}
