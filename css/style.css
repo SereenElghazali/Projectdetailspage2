@@ -105,7 +105,7 @@ hr{
 }
 /*End path-way*/
 .marg{
-   margin: 20px 20px; 
+   margin: 20px 20px 10px 20px; 
 }
 /*Start ad-title*/
 .ad-title h1{
@@ -122,7 +122,7 @@ hr{
     font-weight: 600;
     margin-right: 10px;
     text-align: right;
-    margin-top: 20px
+    
 }
 /*End ad-title*/
 .ad-post-date{
@@ -395,7 +395,7 @@ margin-left: 20px;
 /*End contact*/
 /*Start spot box*/
 .xx{
-	padding: 15px;
+	padding: 15px 15px 0 15px;
 }
 .spot{
 	
@@ -410,7 +410,7 @@ margin-left: 20px;
 .spot-box{
     border: 1px solid #d8d9da;
     border-radius: 6px;
-    margin-bottom: 20px;
+   
     margin-top: 10px;
 	
 }
@@ -487,9 +487,10 @@ li.th{
 }
 /*Start Footer*/
 .m-footer{
+	height: 55px;
     text-align: center;
     border-top: 1px solid #ccc;
-    padding: 10px 0px;
+    padding: 16px 0px;
     color: #999;
     font-size: 12px;
     font-weight: 200;
@@ -505,13 +506,69 @@ li.th{
 	margin-left: auto;
 	
 }
+.back1{
+	max-width: 700px;
+    margin-right: auto;
+	margin-left: auto;
+	position: fixed;
+	bottom: 55px;
+	z-index: 1200;
+	display: none;
+	padding-left: 20px;
+}
+.back1 a{
+	
+	position: relative;
+    color: rgba(255,255,255,1);
+    text-decoration: none;
+    background-color: rgba(239,68,51,1);
+    font-family: 'Yanone Kaffeesatz';
+    font-weight: 400;
+    font-size: 1.5em;
+    display: block;
+    padding: 4px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    -webkit-box-shadow: 0px 6px 0px rgba(239,30,51,1), 0px 9px 25px rgba(0,0,0,.7);
+    -moz-box-shadow: 0px 6px 0px rgba(239,30,51,1), 0px 9px 25px rgba(0,0,0,.7);
+    box-shadow: 0px 6px 0px rgba(239,30,51,1), 0px 9px 25px rgba(0,0,0,.7);
+    margin: 10px auto;
+	width: 100px;
+	text-align: center;
+	
+	-webkit-transition: all .1s ease;
+	-moz-transition: all .1s ease;
+	-ms-transition: all .1s ease;
+	-o-transition: all .1s ease;
+	transition: all .1s ease;
+}
+
+.back1 a:active {
+    -webkit-box-shadow: 0px 3px 0px rgba(239,30,51,1), 0px 3px 6px rgba(0,0,0,.9);
+    -moz-box-shadow: 0px 3px 0px rgba(239,30,51,1), 0px 3px 6px rgba(0,0,0,.9);
+    box-shadow: 0px 3px 0px rgba(239,30,51,1), 0px 3px 6px rgba(0,0,0,.9);
+    position: relative;
+    top: 6px;
+}
+
 .z{
 	margin-left: -15px;
 	margin-right: -15px;
 	position: relative;
 	background-color: #fff;
-	z-index: 1200;
+	
 }
 .swal-footer {
     text-align: center;
 }
+/*.contact.scroll-to-fixed-fixed{
+	display: none !important;
+}
+.fixh{
+	display: block !important;
+}*/
+#conth{
+	display: none;
+}
+ 

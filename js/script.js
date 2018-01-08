@@ -22,7 +22,7 @@ $(document).ready(function () {
 });
 	$( ".whatsapp a" ).on( "click", function(e) {
     e.preventDefault();
-    var link = $(this).attr('href');
+    var link1 = $(this).attr('href');
 
     swal({
         title: "+971 50 1553316",
@@ -32,26 +32,11 @@ $(document).ready(function () {
 		
     },
     function(){
-        window.location.href = link;
-		console.log('link',link);
+        window.location.href = link1;
+		console.log('link',link1);
     });
 });
-	$( ".sms a" ).on( "click", function(e) {
-    e.preventDefault();
-    var link = $(this).attr('href');
-
-    swal({
-        title: "+971 50 1553316",
-        text: "sms me",
-        type: "",
-        showCancelButton: true,
-		
-    },
-    function(){
-        window.location.href = link;
-		console.log('link',link);
-    });
-});
+	
 	// $( ".phone a" ).on( "click", function() {
     // swal({
   		// text: "+971 50 1553316",
@@ -120,7 +105,8 @@ if($( window ).width()>400)
         bottom: 0,
         limit: $('#contact1').offset().top - $('#contact1').outerHeight(true) + 400,
         
-    });}
+    });
+	}
 	else{ $('#contact1').scrollToFixed( {
         bottom: 0,
         limit: $('#contact1').offset().top - $('#contact1').outerHeight(true) + 200,
@@ -132,49 +118,32 @@ if($( window ).width()>400)
 	
     var scrollButton=$("#scroll-top");
 	//on window scrolling
-    var $mainSection=$('.m-body');
-	var $mheader=$('.m-header');
-	var h=$mainSection.height()+$mheader.height();
-	var x=$( window ).height();
-	var $cl=$('.cl');
-	console.log('$cl',$cl.height()-x);
-  //  $(window).scroll(function () {
+    var $mainSection=$('.test');
+	
+	var h=$mainSection.height();
+	var x=$( window ).height()-300;
+	
+	console.log('.test',h);
+	
+  $(window).scroll(function () {
 		
-     //   if($(this).scrollTop()<=400 ) {
-			$('#contact1').hide();
-	//	}
-	//	else{
-			$('#contact1').show();
-	//	}
+      if($(this).scrollTop()>= h-x ) {
+			$('#conth').css('display', 'block');
+		  $('.back1').css('display', 'block');
+		  console.log(' sereen555  ',h-x);
+		}
+		else{
+			$('#conth').css('display', 'none');
+			$('.back1').css('display', 'none');
+			console.log(' sereennone');
+		}
 		
    
-  // });
+ });
+	});
 	
 	
-    var liLength2;
-    var liLength=$(".path-way ul").children().length;
-	liLength2=$(".path-way ul li").text().length
-	console.log('liLength2',liLength2);
-	var windowsize=$( window ).width();
-    console.log(' window width"',windowsize);
-	console.log(' windowsize*32/360"',windowsize);
-	if(liLength2 > 32){
-		console.log("sereen");
-		$('.t').addClass('th');
-		$('.d').show();
-		
-	}
-	else{
-		console.log(' sereen2');
-	}
-		
-	 $( ".d" ).on( "click", function() {
-     $('.t').toggleClass('th');
-});
-
-});
-
-
+   
 /*$(function() {  
     $(".path-way").niceScroll({
 		    cursorwidth: "6px", // cursor width in pixel (you can also write "5px")
