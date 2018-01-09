@@ -530,9 +530,9 @@ li.th{
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
     border-radius: 8px;
-    -webkit-box-shadow: 0px 6px 0px rgba(239,30,51,1), 0px 9px 25px rgba(0,0,0,.7);
-    -moz-box-shadow: 0px 6px 0px rgba(239,30,51,1), 0px 9px 25px rgba(0,0,0,.7);
-    box-shadow: 0px 6px 0px rgba(239,30,51,1), 0px 9px 25px rgba(0,0,0,.7);
+    -webkit-box-shadow: 0px 3px 0px rgba(239,30,51,.5), 0px 4px 15px rgba(0,0,0,.5);
+    -moz-box-shadow: 0px 3px 0px rgba(239,30,51,.5), 0px 4px 15px rgba(0,0,0,.5);
+    box-shadow: 0px 3px 0px rgba(239,30,51,.5), 0px 4px 15px rgba(0,0,0,.5);
     margin: 10px auto;
 	width: 100px;
 	text-align: center;
@@ -545,9 +545,9 @@ li.th{
 }
 
 .back1 a:active {
-    -webkit-box-shadow: 0px 3px 0px rgba(239,30,51,1), 0px 3px 6px rgba(0,0,0,.9);
-    -moz-box-shadow: 0px 3px 0px rgba(239,30,51,1), 0px 3px 6px rgba(0,0,0,.9);
-    box-shadow: 0px 3px 0px rgba(239,30,51,1), 0px 3px 6px rgba(0,0,0,.9);
+    -webkit-box-shadow: 0px 3px 0px rgba(239,30,51,.5), 0px 3px 6px rgba(0,0,0,.9);
+    -moz-box-shadow: 0px 3px 0px rgba(239,30,51,.5), 0px 3px 6px rgba(0,0,0,.9);
+    box-shadow: 0px 3px 0px rgba(239,30,51,.5), 0px 3px 6px rgba(0,0,0,.9);
     position: relative;
     top: 6px;
 }
